@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<div class="vh-100 bg-black d-flex justify-content-center align-items-center loading d-none position-fixed z-3 w-100">
+<span class="loader"></span>
+</div>
+   <section class="Games">
+    <header id="header">
+        <img src="images/wraper.png" alt="" class="headerImg" />
+    </header>
+    <nav class="container rounded-4 text-light p-1 position-sticky top-0">
+       <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="images/logo-sm.png" class="w-25"/>
+            <h1 class="fs-6">GAME REVIEWS</h1>
+        </div>
+            <ul class="d-flex menu">
+                <li><a data-category="mmorpg"class="active">MMORPG</a></li>
+                <li><a data-category="shooter"class="">SHOOTER</a></li>
+                <li><a data-category="sailing" class="">SAILING</a></li>
+                <li><a data-category="permadeath"class="">PERMADEATH</a></li>
+                <li><a data-category="superhero" class="">SUPERHERO</a></li>
+                <li><a data-category="pixel" class="">PIXEL</a></li>
+            </ul>
+       </div>
+    </nav>
+<section class="mt-5">
+<div class="container">
+<div class="row g-3"  id="GAME">
+</div>
+</div>
+
+</div>
+</section>
+   </section>
+<section class="details d-none">
+    <div class="container">
+       <header class="hstack justify-content-between">
+          <h1 class="text-center h3 py-4">Details Game</h1>
+          <button class="btn-close btn-close-white" id="btnClose"></button>
+       </header>
+       <div class="row g-4" id="detailsContent"></div>
+    </div>
+ </section>
+
+</body>
+<script type="module" src="js/main.js"></script>
+</html>
